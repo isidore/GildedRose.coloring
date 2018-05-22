@@ -18,11 +18,11 @@ class GildedRose {
 	public void updateQuality() {
 		for (int i = 0; i < items.length; i++) {
 			Item item = items[i];
-			doStuff(item);
+			updateQualityForItem(item);
 		}
 	}
 
-	public void doStuff(Item item) {
+	public void updateQualityForItem(Item item) {
 		doStuff2(item);
 	}
 
