@@ -29,11 +29,12 @@ class GildedRose {
 			return;
 		}
 		if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+			updateEverythingElse(item);
 
 		} else {
+			updateEverythingElse(item);
 
 		}
-		updateEverythingElse(item);
 	}
 
 	public void updateEverythingElse(Item item) {
