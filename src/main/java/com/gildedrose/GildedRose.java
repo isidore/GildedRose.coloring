@@ -37,7 +37,8 @@ class GildedRose {
 			// do nothing
 			updateQualityForSulfuras(item);
 			return;
-		} else {
+		}
+		{
 
 			if (item.quality > 0) {
 				item.quality = item.quality - 1;
