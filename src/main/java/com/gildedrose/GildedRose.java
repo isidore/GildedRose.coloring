@@ -26,6 +26,7 @@ class GildedRose {
 		if (item.name.equals("Aged Brie")) {
 
 			updateQualityForAgedBrie(item);
+			return;
 		} else {
 
 			updateEverythingElse(item);
