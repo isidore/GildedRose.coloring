@@ -12,7 +12,7 @@ public class GildedRoseTest {
 
 	}
 
-	public String doStuff(String name, Integer quality, Integer sellIn) {
+	public String doStuff(String name, Integer sellIn, Integer quality) {
 		Item[] items = { new Item(name, sellIn, quality) };
 		GildedRose gildedRose = new GildedRose(items);
 		gildedRose.updateQuality();
