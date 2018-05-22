@@ -25,10 +25,11 @@ class GildedRose {
 	public void updateQualityForItem(Item item) {
 		if (item.name.equals("Aged Brie")) {
 
+			doStuff2(item);
 		} else {
 
+			doStuff2(item);
 		}
-		doStuff2(item);
 	}
 
 	public void doStuff2(Item item) {
