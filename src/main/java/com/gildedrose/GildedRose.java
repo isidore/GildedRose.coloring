@@ -27,11 +27,8 @@ class GildedRose {
 
 			updateQualityForAgedBrie(item);
 			return;
-		} else {
-
-			updateEverythingElse(item);
-
 		}
+		updateEverythingElse(item);
 	}
 
 	public void updateEverythingElse(Item item) {
