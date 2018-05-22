@@ -35,6 +35,7 @@ class GildedRose {
 		if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
 
 			// do nothing
+			updateQualityForSulfuras(item);
 		} else {
 
 			if (item.quality > 0) {
@@ -47,6 +48,11 @@ class GildedRose {
 				item.quality = item.quality - 1;
 			}
 		}
+	}
+
+	private void updateQualityForSulfuras(Item item) {
+		// TODO Auto-generated method stub
+
 	}
 
 	public void updateQualityForBackstagePasses(Item item) {
