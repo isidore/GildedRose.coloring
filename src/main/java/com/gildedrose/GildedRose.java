@@ -53,7 +53,6 @@ class GildedRose {
 	}
 
 	private void updateQualityForSulfuras(Item item) {
-		// TODO Auto-generated method stub
 
 	}
 
