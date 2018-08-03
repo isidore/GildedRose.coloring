@@ -22,12 +22,16 @@ class GildedRose {
 	}
 
 	public void doSomething(Item item) {
+		if (item.name.equals("Aged Brie")) {
+
+		} else {
+
+		}
 		doSomething2(item);
 	}
 
 	public void doSomething2(Item item) {
-		if (!item.name.equals("Aged Brie")
-				&& !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+		if (!item.name.equals("Aged Brie") && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
 			if (item.quality > 0) {
 				if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
 					item.quality = item.quality - 1;
