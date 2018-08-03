@@ -1,7 +1,6 @@
 package com.gildedrose;
 
 import org.approvaltests.combinations.CombinationApprovals;
-import org.approvaltests.legacycode.Range;
 import org.approvaltests.reporters.UseReporter;
 import org.approvaltests.reporters.macosx.DiffMergeReporter;
 import org.junit.Test;
@@ -10,22 +9,21 @@ import org.junit.Test;
 public class GildedRoseTest {
 
 	@Test
-	public void foo() throws Exception {
-		String[] names = { "names", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert",
-				"Sulfuras, Hand of Ragnaros" };
-		Integer[] sellIns = Range.get(-1, 15);
-		Integer[] qualities = { 0, -1, 1, 49, 50, 51 };
-		CombinationApprovals.verifyAllCombinations(this::doStuff, names, sellIns, qualities);
+	public void testStuff() throws Exception {
+		String[] names = { "name", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert",
+				"Sulfuras, Hand of Ragnaros", "", null };
+		Integer[] qualities = { 0, -1, 1, 49, 50, 51, Integer.MAX_VALUE, Integer.MIN_VALUE };
+		Integer[] sellIns = { -1, 1, 0, 10, 11, 12, 5, 6, 7, Integer.MAX_VALUE, Integer.MIN_VALUE };
+		CombinationApprovals.verifyAllCombinations(this::doFoo, names, qualities, sellIns);
 	}
 
-	public String doStuff(String name, Integer sellIn, Integer quality) {
-		Item[] items = { new Item(name, sellIn, quality) };
-		GildedRose gildedRose = new GildedRose(items);
-		gildedRose.updateQuality();
-		// Δ
-		Item item = gildedRose.items[0];
-		return String.format("name: %s sellin: %s d %s qualtity: %s d %s", item.name, item.sellIn, item.sellIn - sellIn,
-				item.quality, item.quality - quality);
+	public String doFoo(String name, Integer quality, Integer sellIn) {
+		Item item = new Item(name, sellIn, quality);
+		Item[] items = { item };
+		GildedRose rose = new GildedRose(items);
+		rose.updateQuality();
+		String string = rose.toString();
+		return string;
 	}
 
 }
