@@ -31,11 +31,8 @@ class GildedRose {
 		} else {
 
 		}
-		{
-
-			doother(item2);
-			return;
-		}
+		doother(item2);
+		return;
 	}
 
 	public void doother(Item item2) {
