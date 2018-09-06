@@ -20,6 +20,11 @@ class GildedRose {
 			updateQualityForAgedBrie(i);
 			return;
 		} 
+		if (items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+			
+		} else {
+
+		}
 		  doFooForEverythingElse(i);
 		return;
 	}
