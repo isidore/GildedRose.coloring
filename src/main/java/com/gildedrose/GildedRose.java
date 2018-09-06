@@ -19,7 +19,8 @@ class GildedRose {
 
 			updateQualityForAgedBrie(i);
 			return;
-		} else {
+		} 
+		  {
 
 			doFooForEverythingElse(i);
 			return;
