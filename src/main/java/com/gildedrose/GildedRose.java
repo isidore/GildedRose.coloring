@@ -20,11 +20,8 @@ class GildedRose {
 			updateQualityForAgedBrie(i);
 			return;
 		} 
-		  {
-
-			doFooForEverythingElse(i);
-			return;
-		}
+		  doFooForEverythingElse(i);
+		return;
 	}
 	public void doFooForEverythingElse(int i) {
 		if ( !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
