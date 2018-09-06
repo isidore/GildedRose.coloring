@@ -41,9 +41,7 @@ class GildedRose {
 			item2.sellIn = item2.sellIn - 1;
 			
 			if (item2.sellIn < 0) {
-				if (false) {} else {
-					item2.quality = item2.quality - item2.quality;
-				}
+				item2.quality = item2.quality - item2.quality;
 			}
 			return;
 			
