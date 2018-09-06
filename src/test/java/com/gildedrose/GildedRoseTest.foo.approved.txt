@@ -12,6 +12,8 @@
 [foo, -1, 10] => (name=foo, sellIn=9, quality=-1) 
 [foo, -1, 11] => (name=foo, sellIn=10, quality=-1) 
 [foo, -1, 12] => (name=foo, sellIn=11, quality=-1) 
+[foo, -1, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=-1) 
+[foo, -1, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=-1) 
 [foo, 0, -1] => (name=foo, sellIn=-2, quality=0) 
 [foo, 0, 0] => (name=foo, sellIn=-1, quality=0) 
 [foo, 0, 1] => (name=foo, sellIn=0, quality=0) 
@@ -26,6 +28,8 @@
 [foo, 0, 10] => (name=foo, sellIn=9, quality=0) 
 [foo, 0, 11] => (name=foo, sellIn=10, quality=0) 
 [foo, 0, 12] => (name=foo, sellIn=11, quality=0) 
+[foo, 0, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=0) 
+[foo, 0, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=0) 
 [foo, 1, -1] => (name=foo, sellIn=-2, quality=0) 
 [foo, 1, 0] => (name=foo, sellIn=-1, quality=0) 
 [foo, 1, 1] => (name=foo, sellIn=0, quality=0) 
@@ -40,6 +44,8 @@
 [foo, 1, 10] => (name=foo, sellIn=9, quality=0) 
 [foo, 1, 11] => (name=foo, sellIn=10, quality=0) 
 [foo, 1, 12] => (name=foo, sellIn=11, quality=0) 
+[foo, 1, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=0) 
+[foo, 1, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=0) 
 [foo, 49, -1] => (name=foo, sellIn=-2, quality=47) 
 [foo, 49, 0] => (name=foo, sellIn=-1, quality=47) 
 [foo, 49, 1] => (name=foo, sellIn=0, quality=48) 
@@ -54,6 +60,8 @@
 [foo, 49, 10] => (name=foo, sellIn=9, quality=48) 
 [foo, 49, 11] => (name=foo, sellIn=10, quality=48) 
 [foo, 49, 12] => (name=foo, sellIn=11, quality=48) 
+[foo, 49, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=48) 
+[foo, 49, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=48) 
 [foo, 50, -1] => (name=foo, sellIn=-2, quality=48) 
 [foo, 50, 0] => (name=foo, sellIn=-1, quality=48) 
 [foo, 50, 1] => (name=foo, sellIn=0, quality=49) 
@@ -68,6 +76,8 @@
 [foo, 50, 10] => (name=foo, sellIn=9, quality=49) 
 [foo, 50, 11] => (name=foo, sellIn=10, quality=49) 
 [foo, 50, 12] => (name=foo, sellIn=11, quality=49) 
+[foo, 50, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=49) 
+[foo, 50, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=49) 
 [foo, 51, -1] => (name=foo, sellIn=-2, quality=49) 
 [foo, 51, 0] => (name=foo, sellIn=-1, quality=49) 
 [foo, 51, 1] => (name=foo, sellIn=0, quality=50) 
@@ -82,6 +92,40 @@
 [foo, 51, 10] => (name=foo, sellIn=9, quality=50) 
 [foo, 51, 11] => (name=foo, sellIn=10, quality=50) 
 [foo, 51, 12] => (name=foo, sellIn=11, quality=50) 
+[foo, 51, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=50) 
+[foo, 51, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=50) 
+[foo, 2147483647, -1] => (name=foo, sellIn=-2, quality=2,147,483,645) 
+[foo, 2147483647, 0] => (name=foo, sellIn=-1, quality=2,147,483,645) 
+[foo, 2147483647, 1] => (name=foo, sellIn=0, quality=2,147,483,646) 
+[foo, 2147483647, 2] => (name=foo, sellIn=1, quality=2,147,483,646) 
+[foo, 2147483647, 3] => (name=foo, sellIn=2, quality=2,147,483,646) 
+[foo, 2147483647, 4] => (name=foo, sellIn=3, quality=2,147,483,646) 
+[foo, 2147483647, 5] => (name=foo, sellIn=4, quality=2,147,483,646) 
+[foo, 2147483647, 6] => (name=foo, sellIn=5, quality=2,147,483,646) 
+[foo, 2147483647, 7] => (name=foo, sellIn=6, quality=2,147,483,646) 
+[foo, 2147483647, 8] => (name=foo, sellIn=7, quality=2,147,483,646) 
+[foo, 2147483647, 9] => (name=foo, sellIn=8, quality=2,147,483,646) 
+[foo, 2147483647, 10] => (name=foo, sellIn=9, quality=2,147,483,646) 
+[foo, 2147483647, 11] => (name=foo, sellIn=10, quality=2,147,483,646) 
+[foo, 2147483647, 12] => (name=foo, sellIn=11, quality=2,147,483,646) 
+[foo, 2147483647, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=2,147,483,646) 
+[foo, 2147483647, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=2,147,483,646) 
+[foo, -2147483648, -1] => (name=foo, sellIn=-2, quality=-2,147,483,648) 
+[foo, -2147483648, 0] => (name=foo, sellIn=-1, quality=-2,147,483,648) 
+[foo, -2147483648, 1] => (name=foo, sellIn=0, quality=-2,147,483,648) 
+[foo, -2147483648, 2] => (name=foo, sellIn=1, quality=-2,147,483,648) 
+[foo, -2147483648, 3] => (name=foo, sellIn=2, quality=-2,147,483,648) 
+[foo, -2147483648, 4] => (name=foo, sellIn=3, quality=-2,147,483,648) 
+[foo, -2147483648, 5] => (name=foo, sellIn=4, quality=-2,147,483,648) 
+[foo, -2147483648, 6] => (name=foo, sellIn=5, quality=-2,147,483,648) 
+[foo, -2147483648, 7] => (name=foo, sellIn=6, quality=-2,147,483,648) 
+[foo, -2147483648, 8] => (name=foo, sellIn=7, quality=-2,147,483,648) 
+[foo, -2147483648, 9] => (name=foo, sellIn=8, quality=-2,147,483,648) 
+[foo, -2147483648, 10] => (name=foo, sellIn=9, quality=-2,147,483,648) 
+[foo, -2147483648, 11] => (name=foo, sellIn=10, quality=-2,147,483,648) 
+[foo, -2147483648, 12] => (name=foo, sellIn=11, quality=-2,147,483,648) 
+[foo, -2147483648, 2147483647] => (name=foo, sellIn=2,147,483,646, quality=-2,147,483,648) 
+[foo, -2147483648, -2147483648] => (name=foo, sellIn=2,147,483,647, quality=-2,147,483,648) 
 [Aged Brie, -1, -1] => (name=Aged Brie, sellIn=-2, quality=1) 
 [Aged Brie, -1, 0] => (name=Aged Brie, sellIn=-1, quality=1) 
 [Aged Brie, -1, 1] => (name=Aged Brie, sellIn=0, quality=0) 
@@ -96,6 +140,8 @@
 [Aged Brie, -1, 10] => (name=Aged Brie, sellIn=9, quality=0) 
 [Aged Brie, -1, 11] => (name=Aged Brie, sellIn=10, quality=0) 
 [Aged Brie, -1, 12] => (name=Aged Brie, sellIn=11, quality=0) 
+[Aged Brie, -1, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=0) 
+[Aged Brie, -1, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=0) 
 [Aged Brie, 0, -1] => (name=Aged Brie, sellIn=-2, quality=2) 
 [Aged Brie, 0, 0] => (name=Aged Brie, sellIn=-1, quality=2) 
 [Aged Brie, 0, 1] => (name=Aged Brie, sellIn=0, quality=1) 
@@ -110,6 +156,8 @@
 [Aged Brie, 0, 10] => (name=Aged Brie, sellIn=9, quality=1) 
 [Aged Brie, 0, 11] => (name=Aged Brie, sellIn=10, quality=1) 
 [Aged Brie, 0, 12] => (name=Aged Brie, sellIn=11, quality=1) 
+[Aged Brie, 0, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=1) 
+[Aged Brie, 0, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=1) 
 [Aged Brie, 1, -1] => (name=Aged Brie, sellIn=-2, quality=3) 
 [Aged Brie, 1, 0] => (name=Aged Brie, sellIn=-1, quality=3) 
 [Aged Brie, 1, 1] => (name=Aged Brie, sellIn=0, quality=2) 
@@ -124,6 +172,8 @@
 [Aged Brie, 1, 10] => (name=Aged Brie, sellIn=9, quality=2) 
 [Aged Brie, 1, 11] => (name=Aged Brie, sellIn=10, quality=2) 
 [Aged Brie, 1, 12] => (name=Aged Brie, sellIn=11, quality=2) 
+[Aged Brie, 1, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=2) 
+[Aged Brie, 1, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=2) 
 [Aged Brie, 49, -1] => (name=Aged Brie, sellIn=-2, quality=50) 
 [Aged Brie, 49, 0] => (name=Aged Brie, sellIn=-1, quality=50) 
 [Aged Brie, 49, 1] => (name=Aged Brie, sellIn=0, quality=50) 
@@ -138,6 +188,8 @@
 [Aged Brie, 49, 10] => (name=Aged Brie, sellIn=9, quality=50) 
 [Aged Brie, 49, 11] => (name=Aged Brie, sellIn=10, quality=50) 
 [Aged Brie, 49, 12] => (name=Aged Brie, sellIn=11, quality=50) 
+[Aged Brie, 49, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=50) 
+[Aged Brie, 49, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=50) 
 [Aged Brie, 50, -1] => (name=Aged Brie, sellIn=-2, quality=50) 
 [Aged Brie, 50, 0] => (name=Aged Brie, sellIn=-1, quality=50) 
 [Aged Brie, 50, 1] => (name=Aged Brie, sellIn=0, quality=50) 
@@ -152,6 +204,8 @@
 [Aged Brie, 50, 10] => (name=Aged Brie, sellIn=9, quality=50) 
 [Aged Brie, 50, 11] => (name=Aged Brie, sellIn=10, quality=50) 
 [Aged Brie, 50, 12] => (name=Aged Brie, sellIn=11, quality=50) 
+[Aged Brie, 50, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=50) 
+[Aged Brie, 50, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=50) 
 [Aged Brie, 51, -1] => (name=Aged Brie, sellIn=-2, quality=51) 
 [Aged Brie, 51, 0] => (name=Aged Brie, sellIn=-1, quality=51) 
 [Aged Brie, 51, 1] => (name=Aged Brie, sellIn=0, quality=51) 
@@ -166,6 +220,40 @@
 [Aged Brie, 51, 10] => (name=Aged Brie, sellIn=9, quality=51) 
 [Aged Brie, 51, 11] => (name=Aged Brie, sellIn=10, quality=51) 
 [Aged Brie, 51, 12] => (name=Aged Brie, sellIn=11, quality=51) 
+[Aged Brie, 51, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=51) 
+[Aged Brie, 51, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=51) 
+[Aged Brie, 2147483647, -1] => (name=Aged Brie, sellIn=-2, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 0] => (name=Aged Brie, sellIn=-1, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 1] => (name=Aged Brie, sellIn=0, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 2] => (name=Aged Brie, sellIn=1, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 3] => (name=Aged Brie, sellIn=2, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 4] => (name=Aged Brie, sellIn=3, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 5] => (name=Aged Brie, sellIn=4, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 6] => (name=Aged Brie, sellIn=5, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 7] => (name=Aged Brie, sellIn=6, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 8] => (name=Aged Brie, sellIn=7, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 9] => (name=Aged Brie, sellIn=8, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 10] => (name=Aged Brie, sellIn=9, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 11] => (name=Aged Brie, sellIn=10, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 12] => (name=Aged Brie, sellIn=11, quality=2,147,483,647) 
+[Aged Brie, 2147483647, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=2,147,483,647) 
+[Aged Brie, 2147483647, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=2,147,483,647) 
+[Aged Brie, -2147483648, -1] => (name=Aged Brie, sellIn=-2, quality=-2,147,483,646) 
+[Aged Brie, -2147483648, 0] => (name=Aged Brie, sellIn=-1, quality=-2,147,483,646) 
+[Aged Brie, -2147483648, 1] => (name=Aged Brie, sellIn=0, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 2] => (name=Aged Brie, sellIn=1, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 3] => (name=Aged Brie, sellIn=2, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 4] => (name=Aged Brie, sellIn=3, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 5] => (name=Aged Brie, sellIn=4, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 6] => (name=Aged Brie, sellIn=5, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 7] => (name=Aged Brie, sellIn=6, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 8] => (name=Aged Brie, sellIn=7, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 9] => (name=Aged Brie, sellIn=8, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 10] => (name=Aged Brie, sellIn=9, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 11] => (name=Aged Brie, sellIn=10, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 12] => (name=Aged Brie, sellIn=11, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, 2147483647] => (name=Aged Brie, sellIn=2,147,483,646, quality=-2,147,483,647) 
+[Aged Brie, -2147483648, -2147483648] => (name=Aged Brie, sellIn=2,147,483,647, quality=-2,147,483,647) 
 [Backstage passes to a TAFKAL80ETC concert, -1, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, -1, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, -1, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=2) 
@@ -180,6 +268,8 @@
 [Backstage passes to a TAFKAL80ETC concert, -1, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=1) 
 [Backstage passes to a TAFKAL80ETC concert, -1, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, -1, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=0) 
+[Backstage passes to a TAFKAL80ETC concert, -1, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=0) 
+[Backstage passes to a TAFKAL80ETC concert, -1, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=2) 
 [Backstage passes to a TAFKAL80ETC concert, 0, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 0, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 0, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=3) 
@@ -194,6 +284,8 @@
 [Backstage passes to a TAFKAL80ETC concert, 0, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=2) 
 [Backstage passes to a TAFKAL80ETC concert, 0, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=1) 
 [Backstage passes to a TAFKAL80ETC concert, 0, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=1) 
+[Backstage passes to a TAFKAL80ETC concert, 0, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=1) 
+[Backstage passes to a TAFKAL80ETC concert, 0, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=3) 
 [Backstage passes to a TAFKAL80ETC concert, 1, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 1, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 1, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=4) 
@@ -208,6 +300,8 @@
 [Backstage passes to a TAFKAL80ETC concert, 1, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=3) 
 [Backstage passes to a TAFKAL80ETC concert, 1, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=2) 
 [Backstage passes to a TAFKAL80ETC concert, 1, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=2) 
+[Backstage passes to a TAFKAL80ETC concert, 1, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=2) 
+[Backstage passes to a TAFKAL80ETC concert, 1, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=4) 
 [Backstage passes to a TAFKAL80ETC concert, 49, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 49, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 49, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=50) 
@@ -222,6 +316,8 @@
 [Backstage passes to a TAFKAL80ETC concert, 49, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=50) 
 [Backstage passes to a TAFKAL80ETC concert, 49, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=50) 
 [Backstage passes to a TAFKAL80ETC concert, 49, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=50) 
+[Backstage passes to a TAFKAL80ETC concert, 49, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=50) 
+[Backstage passes to a TAFKAL80ETC concert, 49, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=50) 
 [Backstage passes to a TAFKAL80ETC concert, 50, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 50, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 50, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=50) 
@@ -236,6 +332,8 @@
 [Backstage passes to a TAFKAL80ETC concert, 50, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=50) 
 [Backstage passes to a TAFKAL80ETC concert, 50, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=50) 
 [Backstage passes to a TAFKAL80ETC concert, 50, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=50) 
+[Backstage passes to a TAFKAL80ETC concert, 50, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=50) 
+[Backstage passes to a TAFKAL80ETC concert, 50, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=50) 
 [Backstage passes to a TAFKAL80ETC concert, 51, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 51, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
 [Backstage passes to a TAFKAL80ETC concert, 51, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=51) 
@@ -250,6 +348,40 @@
 [Backstage passes to a TAFKAL80ETC concert, 51, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=51) 
 [Backstage passes to a TAFKAL80ETC concert, 51, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=51) 
 [Backstage passes to a TAFKAL80ETC concert, 51, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=51) 
+[Backstage passes to a TAFKAL80ETC concert, 51, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=51) 
+[Backstage passes to a TAFKAL80ETC concert, 51, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=51) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 2] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=1, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 3] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 4] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=3, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 5] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=4, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 6] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=5, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 7] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=6, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 8] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=7, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 9] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=8, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, 2147483647, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, -1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-2, quality=0) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 0] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=-1, quality=0) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 1] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=0, quality=-2,147,483,645) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 2] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=1, quality=-2,147,483,645) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 3] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2, quality=-2,147,483,645) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 4] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=3, quality=-2,147,483,645) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 5] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=4, quality=-2,147,483,645) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 6] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=5, quality=-2,147,483,646) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 7] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=6, quality=-2,147,483,646) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 8] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=7, quality=-2,147,483,646) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 9] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=8, quality=-2,147,483,646) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 10] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=9, quality=-2,147,483,646) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 11] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=10, quality=-2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 12] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=11, quality=-2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, 2147483647] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,646, quality=-2,147,483,647) 
+[Backstage passes to a TAFKAL80ETC concert, -2147483648, -2147483648] => (name=Backstage passes to a TAFKAL80ETC concert, sellIn=2,147,483,647, quality=-2,147,483,645) 
 [Sulfuras, Hand of Ragnaros, -1, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=-1) 
 [Sulfuras, Hand of Ragnaros, -1, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=-1) 
 [Sulfuras, Hand of Ragnaros, -1, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=-1) 
@@ -264,6 +396,8 @@
 [Sulfuras, Hand of Ragnaros, -1, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=-1) 
 [Sulfuras, Hand of Ragnaros, -1, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=-1) 
 [Sulfuras, Hand of Ragnaros, -1, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=-1) 
+[Sulfuras, Hand of Ragnaros, -1, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=-1) 
+[Sulfuras, Hand of Ragnaros, -1, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=-1) 
 [Sulfuras, Hand of Ragnaros, 0, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=0) 
 [Sulfuras, Hand of Ragnaros, 0, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=0) 
 [Sulfuras, Hand of Ragnaros, 0, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=0) 
@@ -278,6 +412,8 @@
 [Sulfuras, Hand of Ragnaros, 0, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=0) 
 [Sulfuras, Hand of Ragnaros, 0, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=0) 
 [Sulfuras, Hand of Ragnaros, 0, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=0) 
+[Sulfuras, Hand of Ragnaros, 0, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=0) 
+[Sulfuras, Hand of Ragnaros, 0, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=0) 
 [Sulfuras, Hand of Ragnaros, 1, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=1) 
 [Sulfuras, Hand of Ragnaros, 1, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=1) 
 [Sulfuras, Hand of Ragnaros, 1, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=1) 
@@ -292,6 +428,8 @@
 [Sulfuras, Hand of Ragnaros, 1, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=1) 
 [Sulfuras, Hand of Ragnaros, 1, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=1) 
 [Sulfuras, Hand of Ragnaros, 1, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=1) 
+[Sulfuras, Hand of Ragnaros, 1, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=1) 
+[Sulfuras, Hand of Ragnaros, 1, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=1) 
 [Sulfuras, Hand of Ragnaros, 49, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=49) 
 [Sulfuras, Hand of Ragnaros, 49, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=49) 
 [Sulfuras, Hand of Ragnaros, 49, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=49) 
@@ -306,6 +444,8 @@
 [Sulfuras, Hand of Ragnaros, 49, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=49) 
 [Sulfuras, Hand of Ragnaros, 49, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=49) 
 [Sulfuras, Hand of Ragnaros, 49, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=49) 
+[Sulfuras, Hand of Ragnaros, 49, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=49) 
+[Sulfuras, Hand of Ragnaros, 49, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=49) 
 [Sulfuras, Hand of Ragnaros, 50, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=50) 
 [Sulfuras, Hand of Ragnaros, 50, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=50) 
 [Sulfuras, Hand of Ragnaros, 50, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=50) 
@@ -320,6 +460,8 @@
 [Sulfuras, Hand of Ragnaros, 50, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=50) 
 [Sulfuras, Hand of Ragnaros, 50, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=50) 
 [Sulfuras, Hand of Ragnaros, 50, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=50) 
+[Sulfuras, Hand of Ragnaros, 50, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=50) 
+[Sulfuras, Hand of Ragnaros, 50, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=50) 
 [Sulfuras, Hand of Ragnaros, 51, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=51) 
 [Sulfuras, Hand of Ragnaros, 51, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=51) 
 [Sulfuras, Hand of Ragnaros, 51, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=51) 
@@ -334,3 +476,293 @@
 [Sulfuras, Hand of Ragnaros, 51, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=51) 
 [Sulfuras, Hand of Ragnaros, 51, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=51) 
 [Sulfuras, Hand of Ragnaros, 51, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=51) 
+[Sulfuras, Hand of Ragnaros, 51, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=51) 
+[Sulfuras, Hand of Ragnaros, 51, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=51) 
+[Sulfuras, Hand of Ragnaros, 2147483647, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 2] => (name=Sulfuras, Hand of Ragnaros, sellIn=2, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 3] => (name=Sulfuras, Hand of Ragnaros, sellIn=3, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 4] => (name=Sulfuras, Hand of Ragnaros, sellIn=4, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 5] => (name=Sulfuras, Hand of Ragnaros, sellIn=5, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 6] => (name=Sulfuras, Hand of Ragnaros, sellIn=6, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 7] => (name=Sulfuras, Hand of Ragnaros, sellIn=7, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 8] => (name=Sulfuras, Hand of Ragnaros, sellIn=8, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 9] => (name=Sulfuras, Hand of Ragnaros, sellIn=9, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, 2147483647, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=2,147,483,647) 
+[Sulfuras, Hand of Ragnaros, -2147483648, -1] => (name=Sulfuras, Hand of Ragnaros, sellIn=-1, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 0] => (name=Sulfuras, Hand of Ragnaros, sellIn=0, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 1] => (name=Sulfuras, Hand of Ragnaros, sellIn=1, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 2] => (name=Sulfuras, Hand of Ragnaros, sellIn=2, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 3] => (name=Sulfuras, Hand of Ragnaros, sellIn=3, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 4] => (name=Sulfuras, Hand of Ragnaros, sellIn=4, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 5] => (name=Sulfuras, Hand of Ragnaros, sellIn=5, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 6] => (name=Sulfuras, Hand of Ragnaros, sellIn=6, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 7] => (name=Sulfuras, Hand of Ragnaros, sellIn=7, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 8] => (name=Sulfuras, Hand of Ragnaros, sellIn=8, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 9] => (name=Sulfuras, Hand of Ragnaros, sellIn=9, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 10] => (name=Sulfuras, Hand of Ragnaros, sellIn=10, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 11] => (name=Sulfuras, Hand of Ragnaros, sellIn=11, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 12] => (name=Sulfuras, Hand of Ragnaros, sellIn=12, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, 2147483647] => (name=Sulfuras, Hand of Ragnaros, sellIn=2,147,483,647, quality=-2,147,483,648) 
+[Sulfuras, Hand of Ragnaros, -2147483648, -2147483648] => (name=Sulfuras, Hand of Ragnaros, sellIn=-2,147,483,648, quality=-2,147,483,648) 
+[null, -1, -1] => null 
+[null, -1, 0] => null 
+[null, -1, 1] => null 
+[null, -1, 2] => null 
+[null, -1, 3] => null 
+[null, -1, 4] => null 
+[null, -1, 5] => null 
+[null, -1, 6] => null 
+[null, -1, 7] => null 
+[null, -1, 8] => null 
+[null, -1, 9] => null 
+[null, -1, 10] => null 
+[null, -1, 11] => null 
+[null, -1, 12] => null 
+[null, -1, 2147483647] => null 
+[null, -1, -2147483648] => null 
+[null, 0, -1] => null 
+[null, 0, 0] => null 
+[null, 0, 1] => null 
+[null, 0, 2] => null 
+[null, 0, 3] => null 
+[null, 0, 4] => null 
+[null, 0, 5] => null 
+[null, 0, 6] => null 
+[null, 0, 7] => null 
+[null, 0, 8] => null 
+[null, 0, 9] => null 
+[null, 0, 10] => null 
+[null, 0, 11] => null 
+[null, 0, 12] => null 
+[null, 0, 2147483647] => null 
+[null, 0, -2147483648] => null 
+[null, 1, -1] => null 
+[null, 1, 0] => null 
+[null, 1, 1] => null 
+[null, 1, 2] => null 
+[null, 1, 3] => null 
+[null, 1, 4] => null 
+[null, 1, 5] => null 
+[null, 1, 6] => null 
+[null, 1, 7] => null 
+[null, 1, 8] => null 
+[null, 1, 9] => null 
+[null, 1, 10] => null 
+[null, 1, 11] => null 
+[null, 1, 12] => null 
+[null, 1, 2147483647] => null 
+[null, 1, -2147483648] => null 
+[null, 49, -1] => null 
+[null, 49, 0] => null 
+[null, 49, 1] => null 
+[null, 49, 2] => null 
+[null, 49, 3] => null 
+[null, 49, 4] => null 
+[null, 49, 5] => null 
+[null, 49, 6] => null 
+[null, 49, 7] => null 
+[null, 49, 8] => null 
+[null, 49, 9] => null 
+[null, 49, 10] => null 
+[null, 49, 11] => null 
+[null, 49, 12] => null 
+[null, 49, 2147483647] => null 
+[null, 49, -2147483648] => null 
+[null, 50, -1] => null 
+[null, 50, 0] => null 
+[null, 50, 1] => null 
+[null, 50, 2] => null 
+[null, 50, 3] => null 
+[null, 50, 4] => null 
+[null, 50, 5] => null 
+[null, 50, 6] => null 
+[null, 50, 7] => null 
+[null, 50, 8] => null 
+[null, 50, 9] => null 
+[null, 50, 10] => null 
+[null, 50, 11] => null 
+[null, 50, 12] => null 
+[null, 50, 2147483647] => null 
+[null, 50, -2147483648] => null 
+[null, 51, -1] => null 
+[null, 51, 0] => null 
+[null, 51, 1] => null 
+[null, 51, 2] => null 
+[null, 51, 3] => null 
+[null, 51, 4] => null 
+[null, 51, 5] => null 
+[null, 51, 6] => null 
+[null, 51, 7] => null 
+[null, 51, 8] => null 
+[null, 51, 9] => null 
+[null, 51, 10] => null 
+[null, 51, 11] => null 
+[null, 51, 12] => null 
+[null, 51, 2147483647] => null 
+[null, 51, -2147483648] => null 
+[null, 2147483647, -1] => null 
+[null, 2147483647, 0] => null 
+[null, 2147483647, 1] => null 
+[null, 2147483647, 2] => null 
+[null, 2147483647, 3] => null 
+[null, 2147483647, 4] => null 
+[null, 2147483647, 5] => null 
+[null, 2147483647, 6] => null 
+[null, 2147483647, 7] => null 
+[null, 2147483647, 8] => null 
+[null, 2147483647, 9] => null 
+[null, 2147483647, 10] => null 
+[null, 2147483647, 11] => null 
+[null, 2147483647, 12] => null 
+[null, 2147483647, 2147483647] => null 
+[null, 2147483647, -2147483648] => null 
+[null, -2147483648, -1] => null 
+[null, -2147483648, 0] => null 
+[null, -2147483648, 1] => null 
+[null, -2147483648, 2] => null 
+[null, -2147483648, 3] => null 
+[null, -2147483648, 4] => null 
+[null, -2147483648, 5] => null 
+[null, -2147483648, 6] => null 
+[null, -2147483648, 7] => null 
+[null, -2147483648, 8] => null 
+[null, -2147483648, 9] => null 
+[null, -2147483648, 10] => null 
+[null, -2147483648, 11] => null 
+[null, -2147483648, 12] => null 
+[null, -2147483648, 2147483647] => null 
+[null, -2147483648, -2147483648] => null 
+[, -1, -1] => (name=, sellIn=-2, quality=-1) 
+[, -1, 0] => (name=, sellIn=-1, quality=-1) 
+[, -1, 1] => (name=, sellIn=0, quality=-1) 
+[, -1, 2] => (name=, sellIn=1, quality=-1) 
+[, -1, 3] => (name=, sellIn=2, quality=-1) 
+[, -1, 4] => (name=, sellIn=3, quality=-1) 
+[, -1, 5] => (name=, sellIn=4, quality=-1) 
+[, -1, 6] => (name=, sellIn=5, quality=-1) 
+[, -1, 7] => (name=, sellIn=6, quality=-1) 
+[, -1, 8] => (name=, sellIn=7, quality=-1) 
+[, -1, 9] => (name=, sellIn=8, quality=-1) 
+[, -1, 10] => (name=, sellIn=9, quality=-1) 
+[, -1, 11] => (name=, sellIn=10, quality=-1) 
+[, -1, 12] => (name=, sellIn=11, quality=-1) 
+[, -1, 2147483647] => (name=, sellIn=2,147,483,646, quality=-1) 
+[, -1, -2147483648] => (name=, sellIn=2,147,483,647, quality=-1) 
+[, 0, -1] => (name=, sellIn=-2, quality=0) 
+[, 0, 0] => (name=, sellIn=-1, quality=0) 
+[, 0, 1] => (name=, sellIn=0, quality=0) 
+[, 0, 2] => (name=, sellIn=1, quality=0) 
+[, 0, 3] => (name=, sellIn=2, quality=0) 
+[, 0, 4] => (name=, sellIn=3, quality=0) 
+[, 0, 5] => (name=, sellIn=4, quality=0) 
+[, 0, 6] => (name=, sellIn=5, quality=0) 
+[, 0, 7] => (name=, sellIn=6, quality=0) 
+[, 0, 8] => (name=, sellIn=7, quality=0) 
+[, 0, 9] => (name=, sellIn=8, quality=0) 
+[, 0, 10] => (name=, sellIn=9, quality=0) 
+[, 0, 11] => (name=, sellIn=10, quality=0) 
+[, 0, 12] => (name=, sellIn=11, quality=0) 
+[, 0, 2147483647] => (name=, sellIn=2,147,483,646, quality=0) 
+[, 0, -2147483648] => (name=, sellIn=2,147,483,647, quality=0) 
+[, 1, -1] => (name=, sellIn=-2, quality=0) 
+[, 1, 0] => (name=, sellIn=-1, quality=0) 
+[, 1, 1] => (name=, sellIn=0, quality=0) 
+[, 1, 2] => (name=, sellIn=1, quality=0) 
+[, 1, 3] => (name=, sellIn=2, quality=0) 
+[, 1, 4] => (name=, sellIn=3, quality=0) 
+[, 1, 5] => (name=, sellIn=4, quality=0) 
+[, 1, 6] => (name=, sellIn=5, quality=0) 
+[, 1, 7] => (name=, sellIn=6, quality=0) 
+[, 1, 8] => (name=, sellIn=7, quality=0) 
+[, 1, 9] => (name=, sellIn=8, quality=0) 
+[, 1, 10] => (name=, sellIn=9, quality=0) 
+[, 1, 11] => (name=, sellIn=10, quality=0) 
+[, 1, 12] => (name=, sellIn=11, quality=0) 
+[, 1, 2147483647] => (name=, sellIn=2,147,483,646, quality=0) 
+[, 1, -2147483648] => (name=, sellIn=2,147,483,647, quality=0) 
+[, 49, -1] => (name=, sellIn=-2, quality=47) 
+[, 49, 0] => (name=, sellIn=-1, quality=47) 
+[, 49, 1] => (name=, sellIn=0, quality=48) 
+[, 49, 2] => (name=, sellIn=1, quality=48) 
+[, 49, 3] => (name=, sellIn=2, quality=48) 
+[, 49, 4] => (name=, sellIn=3, quality=48) 
+[, 49, 5] => (name=, sellIn=4, quality=48) 
+[, 49, 6] => (name=, sellIn=5, quality=48) 
+[, 49, 7] => (name=, sellIn=6, quality=48) 
+[, 49, 8] => (name=, sellIn=7, quality=48) 
+[, 49, 9] => (name=, sellIn=8, quality=48) 
+[, 49, 10] => (name=, sellIn=9, quality=48) 
+[, 49, 11] => (name=, sellIn=10, quality=48) 
+[, 49, 12] => (name=, sellIn=11, quality=48) 
+[, 49, 2147483647] => (name=, sellIn=2,147,483,646, quality=48) 
+[, 49, -2147483648] => (name=, sellIn=2,147,483,647, quality=48) 
+[, 50, -1] => (name=, sellIn=-2, quality=48) 
+[, 50, 0] => (name=, sellIn=-1, quality=48) 
+[, 50, 1] => (name=, sellIn=0, quality=49) 
+[, 50, 2] => (name=, sellIn=1, quality=49) 
+[, 50, 3] => (name=, sellIn=2, quality=49) 
+[, 50, 4] => (name=, sellIn=3, quality=49) 
+[, 50, 5] => (name=, sellIn=4, quality=49) 
+[, 50, 6] => (name=, sellIn=5, quality=49) 
+[, 50, 7] => (name=, sellIn=6, quality=49) 
+[, 50, 8] => (name=, sellIn=7, quality=49) 
+[, 50, 9] => (name=, sellIn=8, quality=49) 
+[, 50, 10] => (name=, sellIn=9, quality=49) 
+[, 50, 11] => (name=, sellIn=10, quality=49) 
+[, 50, 12] => (name=, sellIn=11, quality=49) 
+[, 50, 2147483647] => (name=, sellIn=2,147,483,646, quality=49) 
+[, 50, -2147483648] => (name=, sellIn=2,147,483,647, quality=49) 
+[, 51, -1] => (name=, sellIn=-2, quality=49) 
+[, 51, 0] => (name=, sellIn=-1, quality=49) 
+[, 51, 1] => (name=, sellIn=0, quality=50) 
+[, 51, 2] => (name=, sellIn=1, quality=50) 
+[, 51, 3] => (name=, sellIn=2, quality=50) 
+[, 51, 4] => (name=, sellIn=3, quality=50) 
+[, 51, 5] => (name=, sellIn=4, quality=50) 
+[, 51, 6] => (name=, sellIn=5, quality=50) 
+[, 51, 7] => (name=, sellIn=6, quality=50) 
+[, 51, 8] => (name=, sellIn=7, quality=50) 
+[, 51, 9] => (name=, sellIn=8, quality=50) 
+[, 51, 10] => (name=, sellIn=9, quality=50) 
+[, 51, 11] => (name=, sellIn=10, quality=50) 
+[, 51, 12] => (name=, sellIn=11, quality=50) 
+[, 51, 2147483647] => (name=, sellIn=2,147,483,646, quality=50) 
+[, 51, -2147483648] => (name=, sellIn=2,147,483,647, quality=50) 
+[, 2147483647, -1] => (name=, sellIn=-2, quality=2,147,483,645) 
+[, 2147483647, 0] => (name=, sellIn=-1, quality=2,147,483,645) 
+[, 2147483647, 1] => (name=, sellIn=0, quality=2,147,483,646) 
+[, 2147483647, 2] => (name=, sellIn=1, quality=2,147,483,646) 
+[, 2147483647, 3] => (name=, sellIn=2, quality=2,147,483,646) 
+[, 2147483647, 4] => (name=, sellIn=3, quality=2,147,483,646) 
+[, 2147483647, 5] => (name=, sellIn=4, quality=2,147,483,646) 
+[, 2147483647, 6] => (name=, sellIn=5, quality=2,147,483,646) 
+[, 2147483647, 7] => (name=, sellIn=6, quality=2,147,483,646) 
+[, 2147483647, 8] => (name=, sellIn=7, quality=2,147,483,646) 
+[, 2147483647, 9] => (name=, sellIn=8, quality=2,147,483,646) 
+[, 2147483647, 10] => (name=, sellIn=9, quality=2,147,483,646) 
+[, 2147483647, 11] => (name=, sellIn=10, quality=2,147,483,646) 
+[, 2147483647, 12] => (name=, sellIn=11, quality=2,147,483,646) 
+[, 2147483647, 2147483647] => (name=, sellIn=2,147,483,646, quality=2,147,483,646) 
+[, 2147483647, -2147483648] => (name=, sellIn=2,147,483,647, quality=2,147,483,646) 
+[, -2147483648, -1] => (name=, sellIn=-2, quality=-2,147,483,648) 
+[, -2147483648, 0] => (name=, sellIn=-1, quality=-2,147,483,648) 
+[, -2147483648, 1] => (name=, sellIn=0, quality=-2,147,483,648) 
+[, -2147483648, 2] => (name=, sellIn=1, quality=-2,147,483,648) 
+[, -2147483648, 3] => (name=, sellIn=2, quality=-2,147,483,648) 
+[, -2147483648, 4] => (name=, sellIn=3, quality=-2,147,483,648) 
+[, -2147483648, 5] => (name=, sellIn=4, quality=-2,147,483,648) 
+[, -2147483648, 6] => (name=, sellIn=5, quality=-2,147,483,648) 
+[, -2147483648, 7] => (name=, sellIn=6, quality=-2,147,483,648) 
+[, -2147483648, 8] => (name=, sellIn=7, quality=-2,147,483,648) 
+[, -2147483648, 9] => (name=, sellIn=8, quality=-2,147,483,648) 
+[, -2147483648, 10] => (name=, sellIn=9, quality=-2,147,483,648) 
+[, -2147483648, 11] => (name=, sellIn=10, quality=-2,147,483,648) 
+[, -2147483648, 12] => (name=, sellIn=11, quality=-2,147,483,648) 
+[, -2147483648, 2147483647] => (name=, sellIn=2,147,483,646, quality=-2,147,483,648) 
+[, -2147483648, -2147483648] => (name=, sellIn=2,147,483,647, quality=-2,147,483,648) 

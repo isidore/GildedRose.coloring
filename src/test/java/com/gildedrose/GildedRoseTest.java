@@ -1,7 +1,6 @@
 package com.gildedrose;
 
 import org.approvaltests.combinations.CombinationApprovals;
-import org.approvaltests.legacycode.Range;
 import org.approvaltests.reporters.UseReporter;
 import org.approvaltests.reporters.macosx.DiffMergeReporter;
 import org.junit.Test;
@@ -11,9 +10,9 @@ public class GildedRoseTest {
 
     @Test
     public void foo() throws Exception {
-        String[] names = {"foo","Aged Brie","Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"};
-        Integer[] qualities = {-1,0,1, 49,50,51};
-        Integer[] sellIns = Range.get(-1, 12	);
+        String[] names = {"foo","Aged Brie","Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros", null, ""};
+        Integer[] qualities = {-1,0,1, 49,50,51, Integer.MAX_VALUE, Integer.MIN_VALUE};
+        Integer[] sellIns ={-1,0,1,2,3,4,5,6,7,8,9,10,11,12, Integer.MAX_VALUE, Integer.MIN_VALUE};
 		CombinationApprovals.verifyAllCombinations(this::doStuff, names, qualities, sellIns);
     }
 
