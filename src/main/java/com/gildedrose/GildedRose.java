@@ -43,17 +43,15 @@ class GildedRose {
 				if (items[i].quality < 50) {
 					items[i].quality = items[i].quality + 1;
 
-					if (true) {
-						if (items[i].sellIn < 11) {
-							if (items[i].quality < 50) {
-								items[i].quality = items[i].quality + 1;
-							}
+					if (items[i].sellIn < 11) {
+						if (items[i].quality < 50) {
+							items[i].quality = items[i].quality + 1;
 						}
+					}
 
-						if (items[i].sellIn < 6) {
-							if (items[i].quality < 50) {
-								items[i].quality = items[i].quality + 1;
-							}
+					if (items[i].sellIn < 6) {
+						if (items[i].quality < 50) {
+							items[i].quality = items[i].quality + 1;
 						}
 					}
 				}
