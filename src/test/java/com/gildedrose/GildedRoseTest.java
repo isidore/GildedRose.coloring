@@ -1,15 +1,17 @@
 package com.gildedrose;
 
-import static org.junit.Assert.assertEquals;
-
+import org.approvaltests.Approvals;
+import org.approvaltests.reporters.UseReporter;
+import org.approvaltests.reporters.macosx.DiffMergeReporter;
 import org.junit.Test;
 
+@UseReporter(DiffMergeReporter.class)
 public class GildedRoseTest {
 
     @Test
     public void foo() {
         String result = doStuff();
-		assertEquals("(name=foo, sellIn=-1, quality=0)", result);
+		Approvals.verify(result);
 		return;
     }
 
