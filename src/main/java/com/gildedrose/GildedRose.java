@@ -17,7 +17,7 @@ class GildedRose {
 	public void updateQuality(int i, Item item) {
 		if (item.name.equals("Aged Brie")) {
 
-			doFooForAgedBrie(i);
+			updateQualityForAgedBrie(i);
 		} else {
 
 			doFooForEverythingElse(i);
@@ -66,7 +66,7 @@ class GildedRose {
 		}
 	}
 
-	public void doFooForAgedBrie(int i) {
+	public void updateQualityForAgedBrie(int i) {
 		if (items[i].quality < 50) {
 			items[i].quality = items[i].quality + 1;
 
