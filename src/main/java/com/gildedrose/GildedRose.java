@@ -15,6 +15,11 @@ class GildedRose {
     }
 
 	public void foo(int i, Item item) {
+		if (item.name.equals("Aged Brie") ){
+			
+		} else {
+
+		}
 		foo2(i, item);
 	}
 
