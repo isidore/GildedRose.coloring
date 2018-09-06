@@ -28,11 +28,13 @@ class GildedRose {
 		} 
 		if (item2.name.equals("Sulfuras, Hand of Ragnaros")) {
 			
+			doother(item2);
+			return;
 		} else {
 
+			doother(item2);
+			return;
 		}
-		doother(item2);
-		return;
 	}
 
 	public void doother(Item item2) {
