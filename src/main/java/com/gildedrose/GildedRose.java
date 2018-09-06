@@ -22,13 +22,7 @@ class GildedRose {
 			return;
 		} 
 		if (item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-			if ( !item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-				if (item2.quality > 0) {
-					if (!item2.name.equals("Sulfuras, Hand of Ragnaros")) {
-						item2.quality = item2.quality - 1;
-					}
-				}
-			} else {
+			if (false) {} else {
 				if (item2.quality < 50) {
 					item2.quality = item2.quality + 1;
 			
@@ -46,18 +40,12 @@ class GildedRose {
 				}
 			}
 			
-			if (!item2.name.equals("Sulfuras, Hand of Ragnaros")) {
+			if (true) {
 				item2.sellIn = item2.sellIn - 1;
 			}
 			
 			if (item2.sellIn < 0) {
-				if (!item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-					if (item2.quality > 0) {
-						if (!item2.name.equals("Sulfuras, Hand of Ragnaros")) {
-							item2.quality = item2.quality - 1;
-						}
-					}
-				} else {
+				if (false) {} else {
 					item2.quality = item2.quality - item2.quality;
 				}
 			}
@@ -65,44 +53,26 @@ class GildedRose {
 			
 		} else {
 
-			if ( !item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+			if ( true) {
 				if (item2.quality > 0) {
 					if (!item2.name.equals("Sulfuras, Hand of Ragnaros")) {
 						item2.quality = item2.quality - 1;
 					}
 				}
-			} else {
-				if (item2.quality < 50) {
-					item2.quality = item2.quality + 1;
-			
-					if (item2.sellIn < 11) {
-						if (item2.quality < 50) {
-							item2.quality = item2.quality + 1;
-						}
-					}
-			
-					if (item2.sellIn < 6) {
-						if (item2.quality < 50) {
-							item2.quality = item2.quality + 1;
-						}
-					}
-				}
-			}
+			} else {}
 			
 			if (!item2.name.equals("Sulfuras, Hand of Ragnaros")) {
 				item2.sellIn = item2.sellIn - 1;
 			}
 			
 			if (item2.sellIn < 0) {
-				if (!item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+				if (true) {
 					if (item2.quality > 0) {
 						if (!item2.name.equals("Sulfuras, Hand of Ragnaros")) {
 							item2.quality = item2.quality - 1;
 						}
 					}
-				} else {
-					item2.quality = item2.quality - item2.quality;
-				}
+				} else {}
 			}
 			return;
 		}
