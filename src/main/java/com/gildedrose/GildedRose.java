@@ -15,6 +15,10 @@ class GildedRose {
     }
 
 	public void foo(int i, Item item) {
+		foo2(i, item);
+	}
+
+	public void foo2(int i, Item item) {
 		if (!item.name.equals("Aged Brie")
 		        && !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
 		    if (items[i].quality > 0) {
