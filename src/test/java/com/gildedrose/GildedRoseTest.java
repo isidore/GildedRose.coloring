@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-import org.approvaltests.Approvals;
+import org.approvaltests.combinations.CombinationApprovals;
 import org.approvaltests.reporters.UseReporter;
 import org.approvaltests.reporters.macosx.DiffMergeReporter;
 import org.junit.Test;
@@ -9,10 +9,9 @@ import org.junit.Test;
 public class GildedRoseTest {
 
     @Test
-    public void foo() {
-        String result = doStuff("foo");
-		Approvals.verify(result);
-		return;
+    public void foo() throws Exception {
+        String[] names = {"foo"};
+		CombinationApprovals.verifyAllCombinations(this::doStuff, names);
     }
 
 	public String doStuff(String name) {
