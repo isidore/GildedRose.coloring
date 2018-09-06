@@ -38,9 +38,7 @@ class GildedRose {
 				}
 			}
 			
-			if (true) {
-				item2.sellIn = item2.sellIn - 1;
-			}
+			item2.sellIn = item2.sellIn - 1;
 			
 			if (item2.sellIn < 0) {
 				if (false) {} else {
