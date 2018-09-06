@@ -17,10 +17,11 @@ class GildedRose {
 	public void foo(int i, Item item) {
 		if (item.name.equals("Aged Brie") ){
 			
+			foo2(i, item);
 		} else {
 
+			foo2(i, item);
 		}
-		foo2(i, item);
 	}
 
 	public void foo2(int i, Item item) {
