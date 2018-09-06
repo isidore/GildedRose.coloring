@@ -1,23 +1,17 @@
 package com.gildedrose;
 
-import org.approvaltests.reporters.UseReporter;
-import org.approvaltests.reporters.macosx.DiffMergeReporter;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
-@UseReporter(DiffMergeReporter.class)
 public class GildedRoseTest {
 
-	@Test
-	public void foo() throws Exception {
-
-	}
-
-	public String doStuff(String name, Integer quality, Integer sellIn) {
-		Item[] items = { new Item(name, sellIn, quality) };
-		GildedRose gildedRose = new GildedRose(items);
-		gildedRose.updateQuality();
-		// Δ
-		return String.format("%s", gildedRose);
-	}
+    @Test
+    public void foo() {
+        Item[] items = new Item[] { new Item("foo", 0, 0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals("fixme", app.items[0].name);
+    }
 
 }
