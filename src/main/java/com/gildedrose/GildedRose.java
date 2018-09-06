@@ -18,20 +18,7 @@ class GildedRose {
 		Item item2 = items[i];
 		if (item.name.equals("Aged Brie")) {
 
-			if (item2.quality < 50) {
-				item2.quality = item2.quality + 1;
-			
-				if (item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-				}
-			}
-			
-			item2.sellIn = item2.sellIn - 1;
-			
-			if (item2.sellIn < 0) {
-				 if (item2.quality < 50) {
-					item2.quality = item2.quality + 1;
-				}
-			}
+			updateQualityForAgedBrie(item2);
 			return;
 		} 
 		if (item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
@@ -119,5 +106,23 @@ class GildedRose {
 			}
 			return;
 		}
+	}
+
+	public void updateQualityForAgedBrie(Item item2) {
+		if (item2.quality < 50) {
+			item2.quality = item2.quality + 1;
+		
+			if (item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+			}
+		}
+		
+		item2.sellIn = item2.sellIn - 1;
+		
+		if (item2.sellIn < 0) {
+			 if (item2.quality < 50) {
+				item2.quality = item2.quality + 1;
+			}
+		}
+		return;
 	}
 }
