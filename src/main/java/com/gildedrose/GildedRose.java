@@ -21,12 +21,14 @@ class GildedRose {
 			return;
 		} 
 		if (items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+			doFooForEverythingElse(i);
+			return;
 			
 		} else {
 
+			doFooForEverythingElse(i);
+			return;
 		}
-		  doFooForEverythingElse(i);
-		return;
 	}
 	public void doFooForEverythingElse(int i) {
 		if ( !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
