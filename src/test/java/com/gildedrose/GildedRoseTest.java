@@ -10,7 +10,7 @@ public class GildedRoseTest {
 
     @Test
     public void foo() throws Exception {
-        String[] names = {"foo"};
+        String[] names = {"foo","Aged Brie"};
 		CombinationApprovals.verifyAllCombinations(this::doStuff, names);
     }
 

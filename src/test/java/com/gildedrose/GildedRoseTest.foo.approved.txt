@@ -1,1 +1,2 @@
 [foo] => (name=foo, sellIn=-1, quality=0) 
+[Aged Brie] => (name=Aged Brie, sellIn=-1, quality=2) 
