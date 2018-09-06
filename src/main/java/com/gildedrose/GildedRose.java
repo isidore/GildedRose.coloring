@@ -19,21 +19,17 @@ class GildedRose {
 		if (item.name.equals("Aged Brie")) {
 
 			updateQualityForAgedBrie(item2);
-			return;
 		}
 		else if (item2.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
 			updateQualityForBackstagePasses(item2);
-			return;
 
 		}
 		else if (item2.name.equals("Sulfuras, Hand of Ragnaros")) {
 			updateQualityForSulfuras(item2);
 
-			return;
 		} else {
 
 			updateQualityForDefaultItem(item2);
-			return;
 		}
 	}
 
