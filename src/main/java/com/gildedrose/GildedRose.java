@@ -33,20 +33,14 @@ class GildedRose {
 		} else {
 
 			if (item2.quality > 0) {
-				if (true) {
-					item2.quality = item2.quality - 1;
-				}
+				item2.quality = item2.quality - 1;
 			}
 
-			if (true) {
-				item2.sellIn = item2.sellIn - 1;
-			}
+			item2.sellIn = item2.sellIn - 1;
 
 			if (item2.sellIn < 0) {
 				if (item2.quality > 0) {
-					if (true) {
-						item2.quality = item2.quality - 1;
-					}
+					item2.quality = item2.quality - 1;
 				}
 			}
 			return;
