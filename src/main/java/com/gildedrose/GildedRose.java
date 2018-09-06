@@ -18,11 +18,12 @@ class GildedRose {
 		if (item.name.equals("Aged Brie")) {
 
 			updateQualityForAgedBrie(i);
+			return;
 		} else {
 
 			doFooForEverythingElse(i);
+			return;
 		}
-		return;
 	}
 	public void doFooForEverythingElse(int i) {
 		if ( !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
