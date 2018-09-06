@@ -25,7 +25,8 @@ class GildedRose {
 			updateQualityForBackstagePasses(item2);
 			return;
 			
-		} else {
+		} 
+		{
 
 			doother(item2);
 			return;
