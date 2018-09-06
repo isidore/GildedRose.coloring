@@ -10,9 +10,8 @@ class GildedRose {
 	public void updateQuality() {
 		for (int i = 0; i < items.length; i++) {
 			Item item = items[i];
-			Item item3 = item;
 			Item item2 = item;
-			if (item3.name.equals("Aged Brie")) {
+			if (item.name.equals("Aged Brie")) {
 			
 				updateQualityForAgedBrie(item2);
 			}
