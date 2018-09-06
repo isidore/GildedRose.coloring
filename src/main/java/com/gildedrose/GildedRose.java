@@ -32,17 +32,22 @@ class GildedRose {
 			return;
 		} else {
 
-			if (item2.quality > 0) {
-				item2.quality = item2.quality - 1;
-			}
-
-			item2.sellIn = item2.sellIn - 1;
-
-			if (item2.sellIn < 0 && item2.quality > 0) {
-				item2.quality = item2.quality - 1;
-			}
+			updateQualityForDefaultItem(item2);
 			return;
 		}
+	}
+
+	public void updateQualityForDefaultItem(Item item2) {
+		if (item2.quality > 0) {
+			item2.quality = item2.quality - 1;
+		}
+
+		item2.sellIn = item2.sellIn - 1;
+
+		if (item2.sellIn < 0 && item2.quality > 0) {
+			item2.quality = item2.quality - 1;
+		}
+		return;
 	}
 
 	private void updateQualityForSulfuras(Item item2) {
